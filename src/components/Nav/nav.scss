@@ -10,10 +10,17 @@
   }
   .nav-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 
     @include tablet {
      justify-content: center;
+     height: 20vh;
+     width: 22%;
+    }
+
+    @include desktop {
+    width: auto;
+    height: auto;
     }
   }
   .nav-btn {
@@ -80,6 +87,7 @@
 
       @include tablet {
         align-items: flex-start;
+        justify-content: space-around;
       }
     }
     .nav-links {

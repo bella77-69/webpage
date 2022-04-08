@@ -1,11 +1,11 @@
-import React from 'react';
+// import React from 'react';
+// import AboutMe from '../../components/About/AboutMe';
+// function About(props) {
+//     return (
+//         <div>
+//             <AboutMe />
+//         </div>
+//     );
+// }
 
-function About(props) {
-    return (
-        <div>
-            About page
-        </div>
-    );
-}
-
-export default About;
+// export default About;

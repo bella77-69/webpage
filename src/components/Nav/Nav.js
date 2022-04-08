@@ -42,7 +42,6 @@ export default class Nav extends Component {
             <NavLink to="/contact" className="nav-links">
               Contact
             </NavLink>
-
           </ul>
         </div>
       </nav>

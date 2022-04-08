@@ -1,0 +1,73 @@
+@import '../../styles/mixins';
+
+.about {
+    margin: 0 auto;
+    padding-bottom: 2rem;
+
+    &-wrapper {
+    display:grid;
+    gap: 2rem;
+    justify-items: center;
+    
+    @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    }
+    }
+
+    &-img {
+    width: 50%;
+    display: block;
+    border-radius: .5rem;
+    margin-top: .5rem;
+    object-fit: contain;
+        
+        @include tablet {
+        width: 53%;
+       
+        }
+
+        @include desktop {
+        width: 65%;
+        margin-top: 1rem;
+        }
+    }
+
+    &-title {
+    text-align: center;
+   
+       
+        @include desktop {
+        margin-top: 4rem;
+        }
+    }
+
+    &-container {
+
+        @include tablet {
+        width: 100%;
+       
+        }
+    }
+
+    &-details {
+    line-height: 1.5;
+    margin: .3125rem;
+    color: $font;
+    font-size: 1rem;
+
+        @include tablet {
+        line-height: 1.75;
+        font-size: 1.125rem;
+        margin: 1rem;
+        }
+
+        @include desktop {
+        line-height: 2;
+        max-width: 45em;
+        margin: 0 auto;
+        margin-top: .5rem;
+        font-size: 1.25rem;
+        }
+      }
+}
