@@ -1,0 +1,27 @@
+@import "../../styles/mixins";
+.hero {
+    margin: 0 auto;
+    width: 100%;
+
+    &-container {
+    // width: 100%;
+    // background-image: linear-gradient(rgba($black, 0.2), rgba($black, 0.2)),url('../../Assets/Images/hero4.jpg');
+    // background-repeat: no-repeat;
+     height: 28vh;
+    // background-position: center center;
+    // background-size: 100vw auto;
+    background: linear-gradient(rgba(black, 0.1), rgba(black, 0.1)), url('../../assets/images/background3.jpg') center/cover;
+ //   background: linear-gradient(rgba($black, 0.2), rgba($black, 0.2)), url('../../Assets/Images/hero4.jpg') center/cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+     @include tablet {
+         height: 73vh;
+     }
+
+     @include desktop {
+         height: 116vh;
+     }
+    }
+}

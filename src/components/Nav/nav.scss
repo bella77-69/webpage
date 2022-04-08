@@ -1,0 +1,104 @@
+@import "../../styles/mixins";
+.nav {
+    // position: fixed;
+    top: 0;
+    left: 0;
+    // width: 100%;
+    padding: 0.75rem 1rem;
+    background: $blkgrey;
+    z-index: 1;
+  }
+  .nav-header {
+    display: flex;
+    justify-content: space-between;
+
+    @include tablet {
+     justify-content: center;
+    }
+  }
+  .nav-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 5rem;
+    position: fixed;
+    width: .875rem;
+    height: .8125rem;
+    left: 1.0625rem;
+    top: 1.125rem;
+  }
+  .nav-icon {
+    font-size: 1.5rem;
+    color: white;
+  }
+  .nav-links {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s linear;
+    list-style-type: none;
+    color: $light;
+
+    @include tablet {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  .nav-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 1rem 0;
+   color: $font; 
+    transition: all 0.3s linear;
+    font-size: 1rem;
+    //font-weight: 600;
+    letter-spacing: .125rem;
+
+    @include desktop {
+      font-size: 1.125rem;
+    }
+  }
+  .nav-links a:hover {
+    color: $active;
+  }
+  
+  .nav-show {
+    height: 7.812rem;
+    padding: 0;
+  }
+  @media screen and (min-width: 768px) {
+    .nav-btn {
+      display: none;
+    
+    }
+    .nav-center {
+      // max-width: 1480px;
+      margin: 0 auto;
+      display: flex;
+
+      @include tablet {
+        align-items: flex-start;
+      }
+    }
+    .nav-links {
+      height: auto;
+      display: flex;
+      margin-left: 1.5rem;
+      
+    }
+    .nav-links a {
+      margin: 0 1rem;
+      padding: 0.5rem 0;
+    }
+  }
+
+  .nav-img {
+    width: 100%;
+  }
+
+  .nav-link {
+    display: flex;
+    justify-content: center;
+  }
