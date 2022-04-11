@@ -1,0 +1,31 @@
+@import "../../styles/mixins";
+
+.main {
+    margin: 0 auto;
+
+    &-wrapper {
+        margin: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    &-image {
+    margin: 1rem;
+    border: 1px solid $black;
+        width: 20%;
+    }
+
+    &-sass {
+    width: 10%;
+    }
+    &-express {
+    width: 10%;
+    }
+    &-jwt {
+    width: 15%;
+    height: 15vh;
+    }
+}

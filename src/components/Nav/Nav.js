@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import { FaAlignRight } from "react-icons/fa";
-import logo from "../../assets/logo/logo1.png";
+import logo from "../../assets/logo/logo.svg";
 import "./nav.scss";
 
 export default class Nav extends Component {
@@ -30,16 +30,19 @@ export default class Nav extends Component {
           <ul
             className={this.state.isOpen ? "nav-links nav-show" : "nav-links"}
           >
-            <NavLink to="/" className="nav-links">
+            <NavLink to="/" className="nav-links--linked">
               Home
             </NavLink>
-            <NavLink to="/about" className="nav-links">
+            <NavLink to="/about" className="nav-links--linked">
               About
             </NavLink>
-            <NavLink to="/projects" className="nav-links">
+            <NavLink to="/projects" className="nav-links--linked">
               Projects
             </NavLink>
-            <NavLink to="/contact" className="nav-links">
+            <NavLink to="/skills" className="nav-links--linked">
+              Skills
+            </NavLink>
+            <NavLink to="/contact" className="nav-links--linked">
               Contact
             </NavLink>
           </ul>

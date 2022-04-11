@@ -1,27 +1,161 @@
 @import "../../styles/mixins";
+
 .hero {
     margin: 0 auto;
     width: 100%;
 
     &-container {
-    // width: 100%;
-    // background-image: linear-gradient(rgba($black, 0.2), rgba($black, 0.2)),url('../../Assets/Images/hero4.jpg');
-    // background-repeat: no-repeat;
-     height: 28vh;
+        position: relative;
+        // height: 28vh;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("../../assets/images/background3.jpg");
+    // height: 29vh;
+    // background: linear-gradient(rgba(black, 0.1), rgba(black, 0.1)), url('../../assets/images/background3.jpg') center/cover;
     // background-position: center center;
-    // background-size: 100vw auto;
-    background: linear-gradient(rgba(black, 0.1), rgba(black, 0.1)), url('../../assets/images/background3.jpg') center/cover;
- //   background: linear-gradient(rgba($black, 0.2), rgba($black, 0.2)), url('../../Assets/Images/hero4.jpg') center/cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    // background-repeat: no-repeat;
+    // background-size: cover;
  
-     @include tablet {
-         height: 73vh;
-     }
+        @include tablet {
+        height: 73vh;
+        }
 
-     @include desktop {
-         height: 116vh;
-     }
+        @include desktop {
+        height: 116vh;
+        }
+
+        &--wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: .25rem;
+
+            @include tablet {
+            padding-top: 3.25rem;
+            }
+
+            @include desktop {
+            padding-top: 14.25rem;
+            }
+      }
     }
+
+    &-text {
+        content: "";
+      //  position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 0.5;
+    font-family: $fontfamily;
+    font-size: .875rem;
+   color: $light;
+  padding: 1.25rem;
+        
+    @include tablet {
+    font-size: 25px;
+    }
+
+    @include desktop {
+    font-size: 55px;    
+    }
+
+        &--small {
+            content: "";
+            //  position: absolute;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              left: 0;
+              opacity: 0.5;
+          font-family: $fontfamily;
+          font-size: .875rem;
+         color: $light;
+     //   padding: 1.25rem;
+        font-size: .75rem;
+        color: $light;
+        font-family: $fontfamily;
+
+            @include tablet {
+            font-size: 1rem;
+            padding: 1rem;
+            }
+
+            @include desktop {
+            font-size: 1.5625rem;
+            padding: 1.25rem;
+            }
+        }
+        
+        &--smaller {
+        content: "";
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 0.5;
+        font-family: $fontfamily;
+        color: $light;
+        width: 57%;
+        font-size: 11px;
+        padding: .1875rem; 
+        text-align: center;
+        
+
+            @include tablet {
+                font-size: 12px;
+            }
+
+            @include desktop {
+                font-size: 1.25rem;
+                padding: 1.25rem;
+            }
+        }
+    }
+
+    // &-btn {
+    // border-radius: .5rem;
+    // padding: .625rem;
+    // margin-bottom: 2rem;
+    // }
+
+    &-icon{
+    display: inline-block;
+    width: 10px;
+    height: 9px;
+    cursor: pointer;
+    background-color: $font;
+    border-radius: 5px;
+    font-size: 11px;
+    color: $white;
+    text-align: center;
+    margin-right: 9px;
+    margin-top: 1px;
+    padding: 4px;
+
+        &:hover {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+        }
+        
+        @include tablet {
+        width: 1.875rem;
+        height: 23px;
+        padding-top: 6px;
+        font-size: 1.25rem;
+        margin-right: 20px;
+        margin-top: 1rem;
+        }
+      
+        @include desktop {
+        width: 45px;
+        height: 45px;
+        font-size: 30px;
+        margin-right: 25px;
+        line-height: 52px;
+        }
+      }
 }

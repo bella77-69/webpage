@@ -3,6 +3,7 @@ import "./App.scss";
 import Home from "./pages/Home/Home";
 import About from "./components/About/About";
 import Project from "./pages/Projects/Project";
+import Skill from "./pages/Skills/Skill";
 import Contact from "./pages/Contact/Contact";
 import Nav from "./components/Nav/Nav";
 import Footer from "./components/Footer/Footer";
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" exact component={Home} />
           <Route path="/about" exact component={About} />
           <Route path="/projects" exact component={Project} />
+          <Route path='/skills' exact component={Skill} />
           <Route path="/contact" exact component={Contact} />
         </Switch>
         <Footer />
