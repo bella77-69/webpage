@@ -4,17 +4,17 @@ import food from "../../../assets/projects/food.jpg";
 export const othprjData = [
   {
     id: 1,
-    name: "Movie App",
+    name: "E-commerce App",
     github: "https://github.com/bella77-69/movie-app2",
-    desc: "A Netflix Clone App with TMDB movies and series. User can view the Trailer of movie by clicking on the image.",
+    desc: "A Shopping Cart Project in React JS. Used React-faker to generate realistic data. User can add products to cart, leave reviews on products, and checkout. I also added functionality to app with sorting and filtering products by search.",
     demo: {
       image: shop,
       half: true,
       name: "PREVIEW",
     },
     half: false,
-    features: ["NetFlix Clone", "View Trailers"],
-    techs: ["React", "React-YouTube", "React-Router", "Sass", "Axios"],
+    features: ["Shopping-cart", "Filter Products", "Rating"],
+    techs: ["React.js", "Bootstrap", "React-bootstrap", "React-Router", "Faker", "React-Icons"],
   },
   {
     id: 2,
