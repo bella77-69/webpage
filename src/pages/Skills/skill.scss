@@ -8,13 +8,39 @@
 //     background-color: $light;
 // }
 
-// .main-wrapper {
-//     display: flex;
-//     flex-direction: row;
-//     align-items: center;
-//     justify-content: center;
-//     margin: 3px;
-// }
+.main-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 3px;
+    transform-origin: 50% 50%;  
+    animation: rotate 1.5s linear forwards;
+    @keyframes rotate{
+        0%{
+            transform: scale(0);        
+        }
+        // 10%{
+        //       font-size: 80px;
+        //       transform: scale(2);
+        //   }
+        20%{
+              transform: scale(0.5);    
+        }
+        40%{
+              transform: scale(1.5);
+        }
+        60%{
+                transform: scale(0.8);
+          }
+        80%{
+                transform: scale(1.2);
+        }
+        100%{
+                font-size: 80px;
+        }
+      }
+}
 
 .main-image {
     // width: 55px;
@@ -28,44 +54,119 @@
 }
 @import "../../styles/mixins";
 
+// .main {
+//     margin: 0 auto;
+
+//     &-wrapper {
+//         // margin: 1rem;
+//         // display: flex;
+//         // align-items: center;
+//         // justify-content: center;
+//         // flex-wrap: wrap;
+//         // gap: 1.5rem;
+//         margin: 0 auto;
+//         display: grid;
+//         justify-items: center;
+//         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+//         grid-row-gap: 1rem;
+//       //  grid-column-gap: 50px;
+//     }
+
+//     &-image {
+ 
+//         display: inline-block;
+//         opacity: 0;
+    
+//         animation-duration: .15s;
+//         animation-name: dropIn;
+//         animation-iteration-count: 1;
+//         animation-fill-mode: forwards;
+//         animation-delay: 1s;
+//     margin: 1rem;
+//     padding: 10px;
+//     // border: 1px solid $black;
+//     // border-radius: .5rem;
+//     width: 25%;
+//     @keyframes dropIn {
+//         0% {
+//           opacity: 0;
+//           transform: translate3d(0, -60vh, 0);
+//         }
+//         75% {
+//           opacity: 1;
+//           transform: translate3d(0, 1.5vh, 0);
+//         }
+//         100% {
+//           opacity: 1;
+//           transform: translate3d(0, 0, 0);
+//         }
+//       }
+//     }
+
+//     &-sass {
+//     width: 10%;
+//     }
+//     &-express {
+//     width: 10%;
+//     }
+//     &-express {
+//     width: 12%;
+//     }
+//     &-jwt {
+//     width: 25%;
+//     height: 9vh;
+//     }
+// }
 .main {
-    margin: 0 auto;
-
-    &-wrapper {
-        // margin: 1rem;
-        // display: flex;
-        // align-items: center;
-        // justify-content: center;
-        // flex-wrap: wrap;
-        // gap: 1.5rem;
-        margin: 0 auto;
-        display: grid;
-        justify-items: center;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        grid-row-gap: 1rem;
-      //  grid-column-gap: 50px;
-    }
-
-    &-image {
-    margin: 1rem;
-    padding: 50px;
-    border: 1px solid $black;
-    border-radius: .5rem;
-    width: 25%;
-
-    }
-
-    &-sass {
-    width: 10%;
-    }
-    &-express {
-    width: 10%;
-    }
-    &-express {
-    width: 12%;
-    }
-    &-jwt {
-    width: 25%;
-    height: 9vh;
-    }
+    display: grid;
+    place-items: center;
 }
+
+.main-wrapper {
+    width:700px;
+    height:1100px;
+    perspective:1100px; 
+}
+.grid-container{
+    transform-style:preserve-3d;
+    width:100%;
+    height:100%;
+    position:relative;
+  }
+  
+  .grid{
+    position:absolute;
+    width:100%;
+    height:100%;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+    gap:1rem;
+    padding:1rem;
+    transform:rotateY(30deg);
+    background:linear-gradient(45deg, hsla(0, 0%, 100%, 0.03), hsla(0, 0%, 100%, 0.2));
+    border-radius:20px;
+  }
+  
+  .grid-element{
+      background-color: $highlight;
+      font-family: $fontfamily;
+      font-weight: 300;
+   // background-image:linear-gradient(90deg, hsla(0, 100%, 50%, 0.6), hsla(220, 100%, 50%, 0.5));
+    background-size:cover;
+    display:grid;
+    place-items:center;
+    font-size:3rem;
+    border-radius:10px;
+    transition:250ms ease;
+    &:hover {
+        -webkit-transform: scale(2.8);
+        transform: scale(1.8);
+        }
+  }
+  
+  
+  .grid-element:hover{
+    box-shadow:0 0 15px 3px hsla(0, 0%, 100%, 0.5);
+    transform:scale(1.02);
+    cursor:pointer;
+  }

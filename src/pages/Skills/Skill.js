@@ -21,7 +21,7 @@ function Main(props) {
         <Title title="Skills" />
       </div>
       <div className="main-wrapper">
-        <img className="main-image" src={html} alt="html-icon" />
+        {/* <img className="main-image" src={html} alt="html-icon" />
         <img className="main-image" src={css} alt="css-icon" />
         <img className="main-image main-sass" src={sass} alt="scss-icon" />
         <img className="main-image" src={react} alt="react-icon" />
@@ -37,7 +37,25 @@ function Main(props) {
         <img className="main-image" src={firebase} alt="firebase-icon" />
         <img className="main-image main-jwt" src={jwt} alt="jwt-icon" />
         <img className="main-image main-jwt" src={rest} alt="rest-icon" />
-      </div>
+      </div>  */}
+
+      <div class="grid-container">
+        <div className="grid">
+            <div class="grid-element"><img class="lni lni-atlassian" src={html} alt=""/>HTML</div>
+            <div class="grid-element"><img class="lni lni-atlassian" src={css} alt=""/>CSS</div>
+            <div class="grid-element"><img class="lni lni-atlassian"src={sass} alt=""/>Sass</div>
+            <div class="grid-element"><img class="lni lni-atlassian"src={react} alt=""/>React</div>
+            <div class="grid-element"><img class="lni lni-atlassian" src={javascript} alt=""/>JavaScript</div>
+            <div class="grid-element"><img class="lni lni-atlassian" src={sql} alt=""/>MySQL</div>
+            <div class="grid-element"><img class="lni lni-atlassian" src={node} alt=""/>Node</div>
+            <div class="grid-element"><img class="lni lni-atlassian" src={mongodb} alt=""/>Mongodb</div>
+            <div class="grid-element"><img class="lni lni-atlassian" src={firebase} alt=""/>Firebase</div>
+            <div class="grid-element"><img class="lni lni-atlassian" src={jwt} alt=""/>JWT</div>
+            {/* <div class="grid-element"><img class="lni lni-atlassian" src={rest} alt=""/>Rest</div>
+            <div class="grid-element"><img class="lni lni-atlassian" src={express} alt=""/>Express</div> */}
+            </div>
+            </div>
+          </div>
     </div>
   );
 }
