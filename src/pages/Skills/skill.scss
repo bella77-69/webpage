@@ -1,172 +1,290 @@
 @import "../../styles/mixins";
 
-// .main {
+// // .main {
+// //     display: flex;
+// //     flex-direction: column;
+// //     align-items: center;
+// //     height: 100vh;
+// //     background-color: $light;
+// // }
+
+// .main-wrapper {
 //     display: flex;
-//     flex-direction: column;
+//     flex-direction: row;
 //     align-items: center;
-//     height: 100vh;
-//     background-color: $light;
-// }
-
-.main-wrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin: 3px;
-    transform-origin: 50% 50%;  
-    animation: rotate 1.5s linear forwards;
-    @keyframes rotate{
-        0%{
-            transform: scale(0);        
-        }
-        // 10%{
-        //       font-size: 80px;
-        //       transform: scale(2);
-        //   }
-        20%{
-              transform: scale(0.5);    
-        }
-        40%{
-              transform: scale(1.5);
-        }
-        60%{
-                transform: scale(0.8);
-          }
-        80%{
-                transform: scale(1.2);
-        }
-        100%{
-                font-size: 80px;
-        }
-      }
-}
-
-.main-image {
-    // width: 55px;
-    height: 59px;
-    object-fit: contain;
-    &:hover {
-        -webkit-transform: scale(1.3);
-        transform: scale(1.3);
-    }
-
-}
-@import "../../styles/mixins";
-
-// .main {
-//     margin: 0 auto;
-
-//     &-wrapper {
-//         // margin: 1rem;
-//         // display: flex;
-//         // align-items: center;
-//         // justify-content: center;
-//         // flex-wrap: wrap;
-//         // gap: 1.5rem;
-//         margin: 0 auto;
-//         display: grid;
-//         justify-items: center;
-//         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-//         grid-row-gap: 1rem;
-//       //  grid-column-gap: 50px;
-//     }
-
-//     &-image {
- 
-//         display: inline-block;
-//         opacity: 0;
-    
-//         animation-duration: .15s;
-//         animation-name: dropIn;
-//         animation-iteration-count: 1;
-//         animation-fill-mode: forwards;
-//         animation-delay: 1s;
-//     margin: 1rem;
-//     padding: 10px;
-//     // border: 1px solid $black;
-//     // border-radius: .5rem;
-//     width: 25%;
-//     @keyframes dropIn {
-//         0% {
-//           opacity: 0;
-//           transform: translate3d(0, -60vh, 0);
+//     justify-content: center;
+//     margin: 3px;
+//     transform-origin: 50% 50%;  
+//     animation: rotate 1.5s linear forwards;
+//     @keyframes rotate{
+//         0%{
+//             transform: scale(0);        
 //         }
-//         75% {
-//           opacity: 1;
-//           transform: translate3d(0, 1.5vh, 0);
+//         // 10%{
+//         //       font-size: 80px;
+//         //       transform: scale(2);
+//         //   }
+//         20%{
+//               transform: scale(0.5);    
 //         }
-//         100% {
-//           opacity: 1;
-//           transform: translate3d(0, 0, 0);
+//         40%{
+//               transform: scale(1.5);
+//         }
+//         60%{
+//                 transform: scale(0.8);
+//           }
+//         80%{
+//                 transform: scale(1.2);
+//         }
+//         100%{
+//                 font-size: 80px;
 //         }
 //       }
-//     }
-
-//     &-sass {
-//     width: 10%;
-//     }
-//     &-express {
-//     width: 10%;
-//     }
-//     &-express {
-//     width: 12%;
-//     }
-//     &-jwt {
-//     width: 25%;
-//     height: 9vh;
-//     }
 // }
-.main {
-    display: grid;
-    place-items: center;
-}
 
-.main-wrapper {
-    width:700px;
-    height:1100px;
-    perspective:1100px; 
-}
-.grid-container{
-    transform-style:preserve-3d;
-    width:100%;
-    height:100%;
-    position:relative;
-  }
+// .main-image {
+//     // width: 55px;
+//     height: 59px;
+//     object-fit: contain;
+//     &:hover {
+//         -webkit-transform: scale(1.3);
+//         transform: scale(1.3);
+//     }
+
+// }
+// @import "../../styles/mixins";
+
+// // .main {
+// //     margin: 0 auto;
+
+// //     &-wrapper {
+// //         // margin: 1rem;
+// //         // display: flex;
+// //         // align-items: center;
+// //         // justify-content: center;
+// //         // flex-wrap: wrap;
+// //         // gap: 1.5rem;
+// //         margin: 0 auto;
+// //         display: grid;
+// //         justify-items: center;
+// //         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+// //         grid-row-gap: 1rem;
+// //       //  grid-column-gap: 50px;
+// //     }
+
+// //     &-image {
+ 
+// //         display: inline-block;
+// //         opacity: 0;
+    
+// //         animation-duration: .15s;
+// //         animation-name: dropIn;
+// //         animation-iteration-count: 1;
+// //         animation-fill-mode: forwards;
+// //         animation-delay: 1s;
+// //     margin: 1rem;
+// //     padding: 10px;
+// //     // border: 1px solid $black;
+// //     // border-radius: .5rem;
+// //     width: 25%;
+// //     @keyframes dropIn {
+// //         0% {
+// //           opacity: 0;
+// //           transform: translate3d(0, -60vh, 0);
+// //         }
+// //         75% {
+// //           opacity: 1;
+// //           transform: translate3d(0, 1.5vh, 0);
+// //         }
+// //         100% {
+// //           opacity: 1;
+// //           transform: translate3d(0, 0, 0);
+// //         }
+// //       }
+// //     }
+
+// //     &-sass {
+// //     width: 10%;
+// //     }
+// //     &-express {
+// //     width: 10%;
+// //     }
+// //     &-express {
+// //     width: 12%;
+// //     }
+// //     &-jwt {
+// //     width: 25%;
+// //     height: 9vh;
+// //     }
+// // }
+// .main {
+//     display: grid;
+//     place-items: center;
+// }
+
+// .main-wrapper {
+//     width:700px;
+//     height:1100px;
+//     perspective:1100px; 
+// }
+// .grid-container{
+//     transform-style:preserve-3d;
+//     width:100%;
+//     height:100%;
+//     position:relative;
+//   }
   
-  .grid{
-    position:absolute;
-    width:100%;
-    height:100%;
-    display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
-    gap:1rem;
-    padding:1rem;
-    transform:rotateY(30deg);
-    background:linear-gradient(45deg, hsla(0, 0%, 100%, 0.03), hsla(0, 0%, 100%, 0.2));
-    border-radius:20px;
-  }
+//   .grid{
+//     position:absolute;
+//     width:100%;
+//     height:100%;
+//     display:grid;
+//     grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+//     gap:1rem;
+//     padding:1rem;
+//     transform:rotateY(30deg);
+//     background:linear-gradient(45deg, hsla(0, 0%, 100%, 0.03), hsla(0, 0%, 100%, 0.2));
+//     border-radius:20px;
+//   }
   
-  .grid-element{
-      background-color: $highlight;
-      font-family: $fontfamily;
-      font-weight: 300;
-   // background-image:linear-gradient(90deg, hsla(0, 100%, 50%, 0.6), hsla(220, 100%, 50%, 0.5));
-    background-size:cover;
-    display:grid;
-    place-items:center;
-    font-size:3rem;
-    border-radius:10px;
-    transition:250ms ease;
-    &:hover {
-        -webkit-transform: scale(2.8);
-        transform: scale(1.8);
+//   .grid-element{
+//       background-color: $highlight;
+//       font-family: $fontfamily;
+//       font-weight: 300;
+//    // background-image:linear-gradient(90deg, hsla(0, 100%, 50%, 0.6), hsla(220, 100%, 50%, 0.5));
+//     background-size:cover;
+//     display:grid;
+//     place-items:center;
+//     font-size:3rem;
+//     border-radius:10px;
+//     transition:250ms ease;
+//     &:hover {
+//         -webkit-transform: scale(2.8);
+//         transform: scale(1.8);
+//         }
+//   }
+  
+  
+//   .grid-element:hover{
+//     box-shadow:0 0 15px 3px hsla(0, 0%, 100%, 0.5);
+//     transform:scale(1.02);
+//     cursor:pointer;
+//   }
+
+.main{
+	// height: 100%;
+	display: flex;
+    flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+    height: 50vh;
+    width: 100%;
+    background-color: $light;
+
+        @include tablet {
+        height: 88vh;
         }
-  }
-  
-  
-  .grid-element:hover{
-    box-shadow:0 0 15px 3px hsla(0, 0%, 100%, 0.5);
-    transform:scale(1.02);
-    cursor:pointer;
-  }
+
+        @include desktop {
+        height: 110vh;
+        }
+
+    &-wrapper{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    filter: drop-shadow(0 0 .5px $white) drop-shadow(0 0 8px $fontlight);
+
+    @include tablet {
+    flex-wrap: wrap;
+    }
+    }
+}
+.box{
+    background-image: url("../../assets/badge/react.png");
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+	height: 21px;
+	width: 31px;
+	background-color: $font;
+	//box-shadow: 0 0 16px #000;
+	border-radius: 15px;
+	transition: 0.4s;
+	animation-name: iden;
+	animation-duration: 1s;
+	animation-delay: 1s;
+    padding: 11px;
+    margin-right: 7px;
+    
+        @include tablet {
+        height: 80px;
+        width: 80px;
+        padding: 8px;
+        margin: 1rem;
+        }
+    
+        @include desktop {
+        background-size: auto;
+        height: 150px;
+	    width: 150px;
+        padding: 10px;
+        margin-right: 55px;
+        }
+}
+.box:hover{
+	// pointer: url();
+	transform: scale(1.1, 1.1);
+	box-shadow: 0 0 60px rgba(0,0,0,.8);
+}
+.box2{
+	background-image: url("../../assets/badge/node.png");
+	animation-delay: 1.2s;
+}
+.box3{
+	background-image: url("../../assets/badge/javascript.png");
+	animation-delay: 1.4s;
+}
+.box4{
+	background-image: url("../../assets/badge/html.png");
+	animation-delay: 1.6s;
+}
+.box5{
+	background-image: url("../../assets/badge/css.png");
+	animation-delay: 1.8s;
+}
+.box6{
+	background-image: url("../../assets/badge/sass.png");
+	animation-delay: 2s;
+}
+.box7{
+	background-image: url("../../assets/badge/mongodb.png");
+	animation-delay: 2.1s;
+}
+.box8{
+	background-image: url("../../assets/badge/logo-mysql.png");
+	animation-delay: 2.2s;
+}
+.box9{
+	background-image: url("../../assets/badge/firebase.png");
+	animation-delay: 2.3s;
+}
+.box10{
+	background-image: url("../../assets/badge/npm.png");
+	animation-delay: 2.4s;
+}
+.box11{
+	background-image: url("../../assets/badge/express.png");
+	animation-delay: 2.5s;
+}
+.box12{
+	background-image: url("../../assets/badge/git.webp");
+	animation-delay: 2.6s;
+}
+@keyframes iden{
+	0%{}
+	50%{	transform: scale(1.1, 1.1);
+	box-shadow: 0 0 60px rgba(0,0,0,.8);}
+	100%{}
+}

@@ -9,6 +9,7 @@ const Project = () => {
   return (
     <div id="projects" className="project">
       <Title title="Projects" />
+      <div className="about-shadow">
       <div className="project-container--bottom">
         <div className="colDivider" id="webprj">
           <div className="subNav">Web Development Projects</div>
@@ -234,6 +235,7 @@ const Project = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

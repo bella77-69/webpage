@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import { FaAlignRight } from "react-icons/fa";
-import logo from "../../assets/logo/logo.svg";
+import logo from "../../assets/logo/cp.png";
 import "./nav.scss";
 
 export default class Nav extends Component {
@@ -17,7 +17,8 @@ export default class Nav extends Component {
         <div className="nav-center">
           <div className="nav-header">
             <NavLink to="/" className="nav-link">
-              <img src={logo} className="nav-img" alt="webpage logo" />
+              <h1 className="nav-logo">CP</h1>
+              {/* <img src={logo} className="nav-img" alt="webpage logo" /> */}
             </NavLink>
             <button
               type="button"
@@ -42,9 +43,9 @@ export default class Nav extends Component {
             <NavLink to="/skills" className="nav-links--linked">
               Skills
             </NavLink>
-            <NavLink to="/contact" className="nav-links--linked">
+            {/* <NavLink to="/contact" className="nav-links--linked">
               Contact
-            </NavLink>
+            </NavLink> */}
           </ul>
         </div>
       </nav>

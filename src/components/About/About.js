@@ -7,13 +7,15 @@ const About = () => {
   return (
     <main className="about">
       <div className="about-title">
-        <Title title="My Story" />
+        <Title title="About Me" />
       </div>
+
       <div className="about-wrapper">
+        <div className="about-shadow">
         <img className="about-img" src={aboutImg} alt="avatar" />
 
         <article className="about-container">
-          <p className="about-details">Hello, and Welcome</p>
+          {/* <p className="about-details">Hello, and Welcome</p> */}
           <p className="about-details">
             I am a graduate of BrainStation's Full Stack Web Developer Program.
             I became a Web Developer because this practice allows me to inhabit
@@ -24,13 +26,13 @@ const About = () => {
             together to build something incredible.
 
           </p>
-          <p className="about-details">
+          {/* <p className="about-details">
             {" "}
             I am seeking projects to
             maximize the value I can bring to end-users in today’s digital
             world. I look forward to being continuously challenged and learning
             new things every day.
-          </p>
+          </p> */}
           <p className="about-details">
             Building state-of-the-art, easy to use, user-friendly websites and
             applications is truly a passion of mine. This industry appeals to me
@@ -40,6 +42,7 @@ const About = () => {
             parts of myself in the work that I do.
           </p>
         </article>
+        </div>
       </div>
     </main>
   );
