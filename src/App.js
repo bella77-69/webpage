@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.scss";
 import Home from "./pages/Home/Home";
@@ -7,22 +8,33 @@ import Skill from "./pages/Skills/Skill";
 import Contact from "./pages/Contact/Contact";
 import Nav from "./components/Nav/Nav";
 import Footer from "./components/Footer/Footer";
+import Preloader from "./components/Loader/Loading";
+
 
 function App() {
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 1500)
+  }, [])
+
   return (
-    <div>
       <Router>
+     {loading === false ? (
+         <div className="App">
         <Nav />
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/about" exact component={About} />
           <Route path="/projects" exact component={Project} />
-          <Route path='/skills' exact component={Skill} />
+          <Route path="/skills" exact component={Skill} />
           <Route path="/contact" exact component={Contact} />
         </Switch>
         <Footer />
+        </div> ) : (
+          <Preloader />
+        )}
       </Router>
-    </div>
   );
 }
 

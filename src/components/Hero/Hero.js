@@ -10,7 +10,7 @@ function Hero() {
         <div className="hero-container">
          {/* <p class="hero-intro">Hello, </p> */}
           <h1 className="hero-intro-title mb-4">I am Chantelle</h1>
-          <p className="hero-subtitle"><span className="text-slider-items">Full-Stack Web Developer</span><strong class="text-slider"></strong></p>
+          <p className="hero-subtitle"><span className="text-slider-items">Full-Stack Web Developer</span><strong className="text-slider"></strong></p>
           <p className="hero-text--smaller">Building state-of-the-art, easy to use, user-friendly websites and applications is truly a passion of mine</p>
       {/* <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> */}
         </div>
