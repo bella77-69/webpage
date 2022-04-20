@@ -9,56 +9,56 @@ const Project = () => {
   return (
     <div id="projects" className="project">
       <Title title="Projects" />
-      <div className="about-shadow">
-      <div className="project-container--bottom">
-        <div className="colDivider" id="webprj">
-          <div className="subNav">Web Development Projects</div>
-          <div style={{ display: "flex", flexDirection: "column" }}>
+      <div className="project-shadow">
+      <div className="project-container">
+        <div className="project-divder" id="webprj">
+          <div className="project-subNav">Web Development Projects</div>
+          <div className="project-subtitle">
             {wbprjData.map((website) => (
-              <div className="prjContent">
-                <div
-                  style={{
-                    display: "flex",
-                    flexDirection: "row",
-                    alignItems: "center",
-                  }}
+              <div className="project-content">
+                <div className="project-info"
+                  // style={{
+                  //   display: "flex",
+                  //   flexDirection: "row",
+                  //   alignItems: "center",
+                  // }}
                 >
-                  <div className="prjName">{website.name}</div>
+                  <div className="project-name">{website.name}</div>
                   {/* <a href={website.github} ></a> */}
                 </div>
                 {/* { !website.desktopGif && <div style={{textAlign: "left", backgroundColor: "lightgray", borderRadius: "10px", width: "fit-content", height: "fit-content", marginTop: "-12px", marginBottom: "12px"}}>#Hackathon</div> } */}
-                <div className="prjDesc">{website.desc}</div>
+                <div className="project-desc">{website.desc}</div>
                 {website.desktopGif && (
-                  <div className="subtitle">WEBSITE PREVIEW</div>
+                  <div className="project-option">WEBSITE PREVIEW</div>
                 )}
-                <div className="prjDemo">
+                <div className="project-demo">
                   {website.desktopGif && (
                     <img
-                      className="prjDemo desktopDemo movie-demo"
+                      className="project-demo project-desktopDemo project-movie-demo"
                       src={website.desktopGif}
-                      alt=""
+                      alt="project-preview"
                     />
                   )}
                   {website.mobileGif && (
                     <img
-                      className="prjDemo mobileDemo movie-demo"
+                      className="project-demo project-mobileDemo project-movie-demo"
                       src={website.mobileGif}
-                      alt=""
+                      alt="project-preview"
                     />
                   )}
                 </div>
-                <div className="subpoints">
-                  <div className="column">
-                    <div className="subtitle">FEATURES</div>
-                    <ul className="notes">
+                <div className="project-subpoints">
+                  <div className="project-column">
+                    <div className="project-subtitle">FEATURES</div>
+                    <ul className="project-notes">
                       {website.features.map((feature) => (
                         <li>{feature}</li>
                       ))}
                     </ul>
                   </div>
-                  <div className="column">
-                    <div className="subtitle">TECHNOLOGIES</div>
-                    <ul className="notes">
+                  <div className="project-column">
+                    <div className="project-subtitle">TECHNOLOGIES</div>
+                    <ul className="project-notes">
                       {website.techs.map((tech) => (
                         <li>{tech}</li>
                       ))}
@@ -69,49 +69,46 @@ const Project = () => {
             ))}
           </div>
         </div>
-        <div className="colDivider">
-          <div className="subNav"> Brainstation Projects</div>
-          <div
-            style={{ display: "flex", flexDirection: "column" }}
-            id="mobileprj"
-          >
+        <div className="project-divder">
+          <div className="project-subNav"> Brainstation Projects</div>
+          <div className="project-subtitle"id="mobileprj">
             {mbprjData.map((app) => (
-              <div className="prjContent">
-                <div
-                  style={{
-                    display: "flex",
-                    flexDirection: "row",
-                    alignItems: "center",
-                  }}
+              <div className="project-content">
+                <div className="project-info"
+                  // style={{
+                  //   display: "flex",
+                  //   flexDirection: "row",
+                  //   alignItems: "center",
+                  // }}
                 >
-                  <div className="prjName">{app.name}</div>
+                  <div className="project-name">{app.name}</div>
                   {/* <a href={app.github} style={{textDecoration: "none"}}></a> */}
                 </div>
-                <div className="prjDesc">{app.desc}</div>
-                <div className="subpoints">
-                  <div className="column">
-                    <div className="subtitle">PREVIEW</div>
-                    <div className="prjDemo">
+                <div className="project-desc">{app.desc}</div>
+                <div className="project-subpoints">
+                  <div className="project-column">
+                    <div className="project-subtitle">PREVIEW</div>
+                    <div className="project-demo">
                       {app.mobileGif && (
                         <img
-                          className="prjDemo mobileDemo"
+                          className="project-demo mobileDemo"
                           src={app.mobileGif}
                           alt=""
                         />
                       )}
                     </div>
                   </div>
-                  <div className="column">
-                    <div className="subtitle">FEATURES</div>
-                    <ul className="notes">
+                  <div className="project-column">
+                    <div className="project-subtitle">FEATURES</div>
+                    <ul className="project-notes">
                       {app.features.map((feature) => (
                         <li>{feature}</li>
                       ))}
                     </ul>
                   </div>
-                  <div className="column">
-                    <div className="subtitle">TECHNOLOGIES</div>
-                    <ul className="notes">
+                  <div className="project-column">
+                    <div className="project-subtitle">TECHNOLOGIES</div>
+                    <ul className="project-notes">
                       {app.techs.map((module) => (
                         <li>{module}</li>
                       ))}
@@ -122,22 +119,22 @@ const Project = () => {
             ))}
           </div>
         </div>
-        <div className="colDivider">
-          <div className="subNav" id="otherprj">
+        <div className="project-divder">
+          <div className="project-subNav" id="otherprj">
             Other Projects
           </div>
           <div style={{ display: "flex", flexDirection: "column" }}>
             {othprjData.map((prj) => (
-              <div className="prjContent">
-                <div
-                  style={{
-                    display: "flex",
-                    flexDirection: "row",
-                    alignItems: "center",
-                  }}
+              <div className="project-content">
+                <div className="project-info"
+                  // style={{
+                  //   display: "flex",
+                  //   flexDirection: "row",
+                  //   alignItems: "center",
+                  // }}
                 >
-                  <div className="prjName">{prj.name}</div>
-                  <a href={prj.github} style={{ textDecoration: "none" }}></a>
+                  <div className="project-name">{prj.name}</div>
+                  {/* <a href={prj.github} style={{ textDecoration: "none" }}></a> */}
                 </div>
                 {prj.tags && (
                   <div
@@ -160,35 +157,35 @@ const Project = () => {
                     ))}
                   </div>
                 )}
-                <div className="prjDesc">{prj.desc}</div>
+                <div className="project-desc">{prj.desc}</div>
                 {prj.demo.half ? (
-                  <div className="subpoints">
-                    <div className="column">
+                  <div className="project-subpoints">
+                    <div className="project-column">
                       {prj.demo.image && (
-                        <div className="subtitle">{prj.demo.name}</div>
+                        <div className="project-subtitle">{prj.demo.name}</div>
                       )}
-                      <div className="prjDemo">
+                      <div className="project-demo">
                         {prj.demo.image && (
                           <img
-                            className="prjDemo mobileDemo"
+                            className="project-demo mobileDemo"
                             src={prj.demo.image}
                             alt=""
                           />
                         )}
                       </div>
                     </div>
-                    <div className="subpoints">
-                      <div className="column">
-                        <div className="subtitle">FEATURES</div>
-                        <ul className="notes">
+                    <div className="project-subpoints">
+                      <div className="project-column">
+                        <div className="project-subtitle">FEATURES</div>
+                        <ul className="project-notes">
                           {prj.features.map((feature) => (
                             <li>{feature}</li>
                           ))}
                         </ul>
                       </div>
-                      <div className="column">
-                        <div className="subtitle">TECHNOLOGIES</div>
-                        <ul className="notes">
+                      <div className="project-column">
+                        <div className="project-subtitle">TECHNOLOGIES</div>
+                        <ul className="project-notes">
                           {prj.techs.map((tech) => (
                             <li>{tech}</li>
                           ))}
@@ -199,20 +196,20 @@ const Project = () => {
                 ) : (
                   <div>
                     {prj.demo.image && (
-                      <div className="subtitle">{prj.demo.name}</div>
+                      <div className="project-subtitle">{prj.demo.name}</div>
                     )}
                     <div className="prjDemo">
                       {prj.demo.image && (
                         <img
-                          className="demofullimg"
+                          className="project-demofullimg"
                           src={prj.demo.image}
-                          alt=""
+                          alt="project-preview"
                         />
                       )}
                     </div>
                     <div className="subpoints">
                       <div className="column">
-                        <div className="subtitle">FEATURES</div>
+                        <div className="project-subtitle">FEATURES</div>
                         <ul className="notes">
                           {prj.features.map((feature) => (
                             <li>{feature}</li>
@@ -220,7 +217,7 @@ const Project = () => {
                         </ul>
                       </div>
                       <div className="column">
-                        <div className="subtitle">TECHNOLOGIES</div>
+                        <div className="project-subtitle">TECHNOLOGIES</div>
                         <ul className="notes">
                           {prj.techs.map((tech) => (
                             <li>{tech}</li>

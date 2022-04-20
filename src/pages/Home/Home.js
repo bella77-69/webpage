@@ -6,12 +6,12 @@ import Skills from "../../pages/Skills/Skill";
 
 function Home() {
   return (
-    <div>
+   <>
       <Hero />
       <About />
       <Projects />
       <Skills />
-    </div>
+      </>
   );
 }
 

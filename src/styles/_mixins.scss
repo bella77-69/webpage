@@ -17,14 +17,14 @@ $white: #fff;
 $fontfamily: 'DM Sans', sans-serif;
 //media breakpoint for mobile
 @mixin mobile {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 400px) {
       @content;
     }
 }
 
 //media breakpoints for tablet */
 @mixin tablet {
-    @media screen and (min-width: 368px) {
+    @media screen and (min-width: 768px) {
       @content;
     }
 }
