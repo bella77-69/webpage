@@ -18,26 +18,27 @@ const Project = () => {
                 <div className="project-content">
                   <div className="project-info">
                     <div className="project-name">{website.name}</div>
+                    <a className="project-website"href={website.github}></a>
                   </div>
                   <div className="project-desc">{website.desc}</div>
-                  {website.desktopGif && (
+                 
                     <div className="project-option">WEBSITE PREVIEW</div>
-                  )}
+                
                   <div className="project-demo">
-                    {website.desktopGif && (
+                    
                       <img
                         className="project-demo project-desktopDemo project-movie-demo"
                         src={website.desktopGif}
                         alt="project-preview"
                       />
-                    )}
-                    {website.mobileGif && (
+                   
+                  
                       <img
                         className="project-demo project-mobileDemo project-movie-demo"
                         src={website.mobileGif}
                         alt="project-preview"
                       />
-                    )}
+               
                   </div>
                   <div className="project-subpoints">
                     <div className="project-column">
@@ -63,31 +64,33 @@ const Project = () => {
           </div>
           <div className="project-divder">
             <div className="project-subNav"> Brainstation Projects</div>
-            <div className="project-subtitle" id="mobileprj">
+            <div className="project-subtitle" >
               {mbprjData.map((app) => (
                 <div className="project-content">
                   <div className="project-info">
                     <div className="project-name">{app.name}</div>
+                    <a className="project-website" href={app.github}></a>
                   </div>
                   <div className="project-desc">{app.desc}</div>
                   <div className="project-subpoints">
                     <div className="project-column">
                       <div className="project-subtitle">PREVIEW</div>
                       <div className="project-demo">
-                        {app.mobileGif && (
+                      
                           <img
                             className="project-demo mobileDemo"
                             src={app.mobileGif}
                             alt=""
                           />
-                        )}
+                    
                       </div>
                     </div>
+                    <div className="project-subpoints">
                     <div className="project-column">
                       <div className="project-subtitle">FEATURES</div>
                       <ul className="project-notes">
                         {app.features.map((feature) => (
-                          <li>{feature}</li>
+                          <li className="project-list">{feature}</li>
                         ))}
                       </ul>
                     </div>
@@ -95,9 +98,10 @@ const Project = () => {
                       <div className="project-subtitle">TECHNOLOGIES</div>
                       <ul className="project-notes">
                         {app.techs.map((module) => (
-                          <li>{module}</li>
+                          <li className="project-list">{module}</li>
                         ))}
                       </ul>
+                    </div>
                     </div>
                   </div>
                 </div>
@@ -105,14 +109,15 @@ const Project = () => {
             </div>
           </div>
           <div className="project-divder">
-            <div className="project-subNav" id="otherprj">
+            <div className="project-subNav" >
               Other Projects
             </div>
-            <div style={{ display: "flex", flexDirection: "column" }}>
+            <div  className="project-subtitle" >
               {othprjData.map((prj) => (
                 <div className="project-content">
                   <div className="project-info">
                     <div className="project-name">{prj.name}</div>
+                    <a className="project-website" href={prj.github}></a>
                   </div>
                   {prj.tags && (
                     <div

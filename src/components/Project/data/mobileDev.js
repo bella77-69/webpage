@@ -7,7 +7,7 @@ export const mbprjData = [
     id: 1,
     name: "Che Vino",
     tags: [{ name: "Capstone Project", color: "lightgrey" }],
-    github: "https://github.com/bella77-69/capstone",
+    github: "https://github.com/bella77-69/Che-Vino",
     desc: "My Capstone project at BrainStation.  I thought it would be great to create a website to assist users in selecting a bottle of wine.",
     mobileGif: wine,
     features: ["Wine Generator", "10,000+ bottles of wine", "Flexbox", "SASS", "Axios for API HTTP requests"],
@@ -27,13 +27,14 @@ export const mbprjData = [
   {
     id: 3,
     name: "BandSite",
-    github: "https://github.com/bella77-69/bandsite",
+    github: "https://github.com/bella77-69/chantelle-mckenzie-bandsite-sprint1",
     website: "",
     desc: "I was tasked to create a responsive, multi-page site that connects to an API over the course of three weeks. We were handed three mockups depicting what the end result should resemble if seen in a mobile, tablet, and desktop format. I was expected to recreate these mock-ups using the skills garnered through the course so far",
 
     mobileGif: band,
     features: [
-      "Wrote semantic HTML & used the principles of BEM for clear, minimal markup",
+      "Wrote semantic HTML",
+      "Used the principles of BEM for clear, minimal markup",
       "Flexbox",
       "SASS",
       "Axios for API HTTP requests",
