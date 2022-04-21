@@ -122,11 +122,11 @@
             }
         
             @include desktop {
-            font-size: 1rem;
+            font-size: 1.1875rem;
             }
           
           &:hover {
-          color: $active;
+          color: $white;
           }
           }
     }

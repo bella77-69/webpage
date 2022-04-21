@@ -9,7 +9,9 @@ function Main() {
       <div className="main-title">
         <Title title="Skills" />
       </div>
+      <div className="main-shadow">
       <div className="main-wrapper">
+     
         <div className="box1 box"></div>
         <div className="box2 box"></div>
         <div className="box3 box"></div>
@@ -27,6 +29,7 @@ function Main() {
         <div className="box11 box"></div>
         <div className="box12 box"></div>
       </div>
+    </div>
     </div>
   );
 }

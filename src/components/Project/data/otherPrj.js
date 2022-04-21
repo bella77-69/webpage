@@ -1,11 +1,11 @@
-import shop from "../../../assets/projects/shop.jpg";
+import shop from "../../../assets/projects/shop1.jpg";
 import food from "../../../assets/projects/food.jpg";
 
 export const othprjData = [
   {
     id: 1,
     name: "E-commerce App",
-    github: "https://github.com/bella77-69/movie-app2",
+    github: "https://github.com/bella77-69/shopping-cart",
     desc: "A Shopping Cart Project in React JS. Used React-faker to generate realistic data. User can add products to cart, leave reviews on products, and checkout. I also added functionality to app with sorting and filtering products by search.",
     demo: {
       image: shop,

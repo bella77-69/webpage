@@ -18,7 +18,7 @@ const Project = () => {
                 <div className="project-content">
                   <div className="project-info">
                     <div className="project-name">{website.name}</div>
-                    <a className="project-website"href={website.github}></a>
+                    <a className="project-website" href={website.github}> </a>
                   </div>
                   <div className="project-desc">{website.desc}</div>
                  
@@ -69,7 +69,7 @@ const Project = () => {
                 <div className="project-content">
                   <div className="project-info">
                     <div className="project-name">{app.name}</div>
-                    <a className="project-website" href={app.github}></a>
+                    <a className="project-website" href={app.github}> </a>
                   </div>
                   <div className="project-desc">{app.desc}</div>
                   <div className="project-subpoints">
@@ -80,7 +80,7 @@ const Project = () => {
                           <img
                             className="project-demo mobileDemo"
                             src={app.mobileGif}
-                            alt=""
+                            alt="app-preview-img"
                           />
                     
                       </div>
@@ -117,7 +117,7 @@ const Project = () => {
                 <div className="project-content">
                   <div className="project-info">
                     <div className="project-name">{prj.name}</div>
-                    <a className="project-website" href={prj.github}></a>
+                    <a className="project-website" href={prj.github}> </a>
                   </div>
                   {prj.tags && (
                     <div
@@ -154,7 +154,7 @@ const Project = () => {
                             <img
                               className="project-demo mobileDemo"
                               src={prj.demo.image}
-                              alt=""
+                              alt="app-preview-img"
                             />
                           )}
                         </div>
@@ -188,7 +188,7 @@ const Project = () => {
                           <img
                             className="project-demofullimg"
                             src={prj.demo.image}
-                            alt="project-preview"
+                            alt="app-preview-img"
                           />
                         )}
                       </div>

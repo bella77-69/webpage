@@ -14,19 +14,18 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        background-color: #fff;
-        // margin-bottom: 3rem;
+        background-color: $white;
         z-index: 2;
         box-shadow: 0 1px 1px 0 rgb(0, 0, 0, 6%), 0 2px 5px 0 rgb(0, 0, 0, 20%);
-        
+        width: 90%;
     
-            @include tablet {
-            width: 90%;
-            }
+            // @include tablet {
+            // width: 90%;
+            // }
     
-            @include desktop {
-            width: 93%;
-            }
+            // @include desktop {
+            // width: 90%;
+            // }
         }
     &-container {
         margin-top: 2rem;
@@ -35,30 +34,23 @@
         align-self: center;
         align-items: center;
         position: static;
+        font-family: $fontfamily;
 
-        @include tablet {
+            @include tablet {
             width: 100%;
-            display: flex;
-            margin-top: 30px;
+            margin-top: 1.875rem;
             justify-content: center;
-            display: flex;
-            flex-direction: column;
-            align-self: center;
-            font-family: $fontfamily;
         }
     }
 
     &-divder {
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-
+ 
         @include tablet {
-        width: 100%;
-        display: flex;
         flex-direction: row;
-        justify-content: center;
         }
 
         @include desktop {
@@ -67,34 +59,30 @@
     }
 
     &-subNav {
-    position: -webkit-sticky;
-    position: sticky;
+    color: $shade;
     top: 60px;
-    font-size: .75rem;
+    font-size: .9375rem;
     height: fit-content;
-    text-align: end;
-    // display: none;
+    text-align: center;
+    font-weight: bolder;
+    font-family: $fontfamily;
 
         @include tablet {
+        text-decoration: none;
+        position: -webkit-sticky;
+        position: sticky;
+        text-align: end;
         font-size: 1rem;
         position: -webkit-sticky;
         position: sticky;
-        font-family: $fontfamily;
-        top: 60px;
         width: 170px;
         height: fit-content;
         text-align: end;
         }
 
         @include desktop {
-        font-size: 25px;
+        font-size: 1.5625rem;
         width: 315px;
-        position: -webkit-sticky;
-        position: sticky;
-        top: 60px;
-        height: fit-content;
-        text-align: end;
-        font-family: $fontfamily;
         }
     }
 
@@ -106,36 +94,34 @@
         text-align: left;
         font-size: 1rem;
         margin: 20px 0px 5px 0px;
+        padding-bottom: 10px;
         }
 
         @include desktop {
         font-size: 1.25rem;
         margin: 20px 20px 5px 20px
         }
-
     }
 
     &-content {
-    padding-left: 15px;
-    margin-left: 15px;
-    border-left: 2px solid lightgray;
-    margin-bottom: 30px;
-    max-width: 800px;
 
-    @include mobile {
-        padding-left: 15px;
-        margin-left: 15px;
-        border-left: 2px solid lightgray;
-        margin-bottom: 30px;
-        max-width: 300px;
-    }
+        @include mobile {
+        // padding: 15px;
+        border-top: 2px solid $lightgrey;
+        margin: 1rem;
+        }
 
         @include tablet  {
         padding-left: 15px;
         margin-left: 5px;
-        border-left: 2px solid lightgray;
+        border-left: 2px solid $lightgrey;
         margin-bottom: 30px;
         max-width: 550px;
+        }
+
+        @include desktop {
+        padding-left: 20px;
+        max-width: 750px;
         }
     }
 
@@ -143,6 +129,11 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
+
+        @include tablet {
+        justify-content: flex-start;
+        }
     }
 
     &-name {
@@ -153,14 +144,11 @@
     color: $black;
 
         @include tablet {
-        font-family: 'Abril Fatface', cursive;
-        text-align: left;
         font-size: 1.5rem;
-        // margin-bottom: 15px;
         }
 
         @include desktop {
-        font-size: 1.562rem;
+        font-size: 1.625rem;
         }
     }
 
@@ -169,34 +157,35 @@
         font-size: .875rem;
         line-height: 16px;
         padding-bottom: 1rem;
-        color: $grey;
-
-        @include tablet {
+        color: $font;
+        padding-right: .5rem;
         font-family: $fontfamily;
-        text-align: left;
-        font-size: .9375rem;
-        line-height: 18px;
-        }
-
-        @include desktop {
-        font-family: $fontfamily;
-        text-align: left;
-        font-size: 1.1875rem;
         font-weight: 200;
-        line-height: 25px;
-        width: 100%;
-        }
+
+            @include tablet {
+            font-size: .9375rem;
+            line-height: 18px;
+            padding-right: 1rem;
+            }
+
+            @include desktop {
+            text-align: left;
+            font-size: 1.1875rem;
+            font-weight: 200;
+            line-height: 25px;
+            width: 100%;
+            padding-right: 0;
+            }
     }
 
-    
     &-option {    
     text-align: left;
-    font-size: 1rem;
+    font-size: .875rem;
     margin: 20px 0px 10px 0px;
     color: $black;
         
         @include tablet {
-        font-size: 1.125rem;
+        font-size: 1rem;
         }
 
         @include desktop {
@@ -209,16 +198,8 @@
     flex-direction: row;
     margin-bottom: 10px;
     align-items: center;
-    // display: flex;
-    // flex-direction: row;
-    // margin-bottom: 10px;
-    // width: 180px;
 
         @include mobile {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        margin-bottom: 10px;
         width: 90px;
         }
 
@@ -236,52 +217,30 @@
 
     &-desktopDemo {
     object-fit: contain;
-    width: 100px;
+    width: 142px;
     margin-right: 25px;
-    box-shadow: .8px .9px 3px grey;
-
-    // object-fit: contain;
-    // width: 280px;
-    // margin-right: 25px;
-    // box-shadow: .8px .9px 3px grey;
+    box-shadow: .8px .9px 3px $border;
 
         @include tablet {
-        width: 130px;
-        object-fit: contain;
         width: 310px;
-        margin-right: 25px;
-        box-shadow: .8px .9px 3px grey;
         }
         
         @include desktop {
-        object-fit: contain;
         width: 500px;
-        margin-right: 25px;
-        box-shadow: .8px .9px 3px grey;
         }
-     
     }
+
     &-mobileDemo {
-        object-fit: contain;
-        width: 90px;
-        box-shadow: .8px .9px 3px grey;
-
-
-        // object-fit: cover;
-        // width: 209px;
-        // /* margin-left: 25px; */
-        // box-shadow: .8px .9px 3px grey;
+    object-fit: contain;
+    width: 53px;
+    box-shadow: .8px .9px 3px $border;
 
         @include mobile {
-        object-fit: contain;
-        width: 60px;
-        box-shadow: .8px .9px 3px grey;
+        width: 54px;
         }
 
         @include tablet {
-            object-fit: contain;
-            width: 117px;
-            box-shadow: .8px .9px 3px grey;
+        width: 117px;  
         }
 
         @include desktop {
@@ -290,23 +249,17 @@
     }
 
     &-subpoints {
-        display: flex;
-        flex-direction: row;
-       // width: 500px;
- // display: flex;
-    // flex-direction: row;
-    // width: calc(100vh - 210px);
+    display: flex;
+    flex-direction: row;
+
         @include mobile {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            padding-top: .75rem;
+        flex-direction: column;
+        width: 100%;
+        padding-top: .75rem;
         }
 
         @include tablet {
-        display: flex;
         flex-direction: row;
-        //width: 550px;
         }
     }
 
@@ -321,6 +274,7 @@
         width: 500px;
         }
     }
+
     &-column {
     width: 50%;
     display: flex;
@@ -328,74 +282,60 @@
 
         @include mobile {
         width: 100%;
-        display: flex;
-        flex-direction: column;
         }
 
         @include tablet {
         width: 50%;
-        display: flex;
-        flex-direction: column;
+        }
+
+        @include desktop {
+        width: 40%;
         }
     }
 
     &-notes {
-        margin-top: 0px;
-        padding-left: 25px;
-        padding-right: 20px;
-        text-align: left;
-        font-size: .75rem;
-        color: $grey;
+    margin-top: 0px;
+    padding-left: 25px;
+    padding-right: 20px;
+    text-align: left;
+    font-size: .75rem;
+    color: $grey;
 
         @include tablet {
-        margin-top: 0px;
         padding-left: 20px;
-        padding-right: 20px;
-        text-align: left;
         font-size: .875rem;
         }
 
         @include desktop {
         font-size: 1.0625rem;
         margin-left: 1.0625rem;
+        padding-right: 0;
         }
-    
     }
 
     &-website {
-        background-image: url(../../assets/logo/git.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        margin-bottom: 15px;
-        margin-left: 10px;
-        width: 20px;
-        height: 30px;
-        cursor: pointer;
-        align-items: center;
-        
-            @include tablet {
-            width: 25px;
-            }
+    background-image: url(../../assets/logo/git.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    width: 20px;
+    height: 30px;
+    cursor: pointer;
+    align-items: center;
+    
+        @include tablet {
+        width: 25px;
+        }
             
-            @include desktop {
-            width: 30px;
-            }
-
-        &:hover {
-            color: rgb(96, 96, 96);
+        @include desktop {
+        width: 30px;
         }
 
-    }
-
-    
-    &-container--bottom {
-        width: 100%;
-        display: flex;
-        margin-top: 30px;
-        justify-content: center;
-        display: flex;
-        flex-direction: column;
-        align-self: center;
+        &:hover {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+        }
     }
 }

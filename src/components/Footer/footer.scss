@@ -2,205 +2,121 @@
 
 .footer {
     background-color: $grey;
-    padding-bottom: 36px;
+    // padding-bottom: 36px;
 
+    padding-bottom: 1rem;
+
+        // @include tablet {
+        // height: 15vh;
+        // }
+    
     &-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    }
-
-    &-title {
-    text-align: center;
-    font-size: .75rem;
-    font-family: $fontfamily;
-    font-weight: 900;   
-    letter-spacing: 1.5px;
-    color: $blackmat;
-    width: 60%;
-    line-height: 1.5rem;
-    margin-top: 1rem;
-
-        @include tablet {
-        font-size: .875rem;
-        margin-top: 2rem;
-        }
-
-        @include desktop {
-        text-align: center;
-        font-size: 1.25rem;
-        letter-spacing: 1.5px;
-        // width: 50%;
-        line-height: 1.5rem;
-        margin-top: 5rem;
-        }
-
-    }
-
-    &-form {
-    max-width: 600px;
-    text-align: center;
-    margin: 20px auto;
-    }
-
-    &-half {
-    float: left;
-    width: 48%;
-    margin-bottom: 1em;
-    }
     
-    &-left {
-    margin-right: 2%; 
-    }
-
-    &-right {
-    width: 50%; 
-    }
-
-    &-input, &-textarea {
-    border: .0313rem solid $font; 
-    padding: 1rem;
-    border-radius: .5rem;
-    width: 85%;
-    margin-top: 1rem;
-    box-shadow : 0 1px 1px rgba(black, 0.1);
-    font-size: 1.125rem;
-             
-        &:focus {
-        box-shadow: 0 0px 2px rgba($font, 1)!important;
-        }
-    }
-        
-    &-textarea {
-    height: 126px;
-    resize: none;
-    }
-
-    &-submit {
-    color: white; 
-    background: $font;
-    cursor: pointer;
-    outline: 0;
-    padding: 1em;
-    border-radius: 8px;
-    width: 100%;
-    margin-top: 1em;
-    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
-    resize: none;
-                 
-        &:hover {
-        box-shadow: 0 1px 1px 1px rgba(#aaa, 0.9);   
-        }
-   }
-
-   &-btn {
-    text-decoration: none;
-    border: 2px solid $font;
-    border-radius: .5rem;
-    padding: .3125rem;
-    }
-
-
-    &-social {
-    display: flex;
-    margin-top: .5rem;
-    transform: translate3d(0, 0, 0);
-    perspective: 1000px;
-    filter: drop-shadow(0 0 .5px #fff) drop-shadow(0 0 8px #fff);
-    transition-delay: 0.3s;
 
         @include tablet {
-        margin-top: 1rem;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: baseline;
         }
 
-        @include desktop {
-        margin-top: 1.5rem;
+    &--social {
+        display: flex;
+        margin-top: .5rem;
+        transform: translate3d(0, 0, 0);
+        perspective: 1000px;
+        filter: drop-shadow(0 0 .5px #fff) drop-shadow(0 0 8px #fff);
+        transition-delay: 0.3s;
+    
+            @include tablet {
+            margin-top: 1rem;
+            }
+    
+            @include desktop {
+            margin-top: 1.5rem;
+            }
         }
+    
     }
 
     &-icon{
-    display: inline-block;
-    width: 10px;
-    height: 9px;
-    cursor: pointer;
-    background-color: $font;
-    border-radius: 5px;
-    font-size: 11px;
-    color: $white;
-    text-align: center;
-    margin-right: 20px;
-    margin-left: 20px;
-    margin-top: 1px;
-   // padding: 4px;
+        display: inline-block;
+        width: 10px;
+        height: 9px;
+        cursor: pointer;
+        background-color: $font;
+        border-radius: 5px;
+        font-size: 11px;
+        color: $white;
+        text-align: center;
+        margin-right: 15px;
+        margin-left: 20px;
+        margin-top: 1px;
+        
+            &:hover {
+            -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+            }
+                
+            @include tablet {
+            width: 1.875rem;
+            height: 23px;
+            padding-top: 6px;
+            font-size: 1.25rem;
+            margin-right: 10px;
+            margin-top: 1rem;
+            }
+              
+            @include desktop {
+            padding-top: 4px;
+            width: 40px;
+            height: 40px;
+            font-size: 30px;
+            margin-right: 25px;
+            margin-left: 35px;
+            line-height: 52px;
+            }
+        }
     
-        &:hover {
-        -webkit-transform: scale(1.3);
-        transform: scale(1.3);
-        }
-            
-        @include tablet {
-        width: 1.875rem;
-        height: 23px;
-        padding-top: 6px;
-        font-size: 1.25rem;
-        margin-right: 20px;
-        margin-top: 1rem;
-        }
-          
-        @include desktop {
-        width: 45px;
-        height: 45px;
-        font-size: 30px;
-        margin-right: 25px;
-        margin-left: 25px;
-        line-height: 52px;
-        }
-    }
-
-    &__txt {
+    &-txt {
     font-weight: 900;   
     letter-spacing: 1.3px;
     font-size: .625rem;
     color: $black;
     letter-spacing: 1px;
     text-align: center;
-    width: 50%;
     line-height: 1.25rem;
 
         @include tablet {
-        font-size: .75rem;
+        font-size: .875rem;
         }
 
         @include desktop {
-        font-size: .875rem;
+        padding-top: 4rem;    
+        font-size: 1rem;
         }
-   
+    }
+    
+    &-title {
+    width: 50%;
+
+        @include tablet {
+        width: 35%;
+        }
+
+        @include desktop {
+        width: 24%;
+        padding-left: 0;
+        }
     }
 
-    &-email {
+    &-copyright {
 
-        &--myemail {
-        font-size: .6875rem;
-        transform: translate3d(0, 0, 0);
-        perspective: 1000px;
-        filter: drop-shadow(0 0 .5px #fff) drop-shadow(0 0 8px #fff);
-        transition-delay: 0.3s;
-        color: $white;
-        text-decoration: none;
-        transition: 100ms ease-in-out;
-
-            @include tablet {
-            font-size: .75rem;
-            }
-
-            @include desktop {
-            font-size: 1rem;
-            }
-
-            &:hover {
-            transform: scale(1.1, 1.1);
-	        box-shadow: 0 0 60px rgba(0,0,0,.8);  
-            }
+        @include desktop {
+            padding-right: 50px;
         }
+ 
     }
 }
