@@ -16,7 +16,7 @@
       height: 25vh;
       
         @include tablet {
-        background-size: contain;
+        background-size: cover;
         height: 66vh;
         }
 
