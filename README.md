@@ -1,6 +1,5 @@
 <h2 align="center">
-
-# Portfolio Web Application
+Portfolio Web Application
 </h2>
 
 <div align="center">
@@ -23,6 +22,7 @@ This project was built using these technologies.
 ## Features
 
 **📱 Fully Responsive**
+**🎨 Styled with Sass**
 
 ## 🛠 Installation and Setup Instructions
 
