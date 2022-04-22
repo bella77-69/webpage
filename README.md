@@ -21,6 +21,7 @@ My personal portfolio was built using these technologies:
 ## Features
 
 Features some of my github projects as well as my technical skills <br/>
+<br/>
 **📱 Fully Responsive**
 **🎨 Styled with Sass**
 
@@ -35,8 +36,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.
 
 ### Deployment
-
-
 
 [https://cpasceri.netlify.app/](https://cpasceri.netlify.app/ “My Portfolio Website”)
 
