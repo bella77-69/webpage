@@ -20,7 +20,7 @@ My personal portfolio was built using these technologies:
 
 ## Features
 
-** Features some of my github projects as well as my technical skills
+Features some of my github projects as well as my technical skills <br/>
 **📱 Fully Responsive**
 **🎨 Styled with Sass**
 
