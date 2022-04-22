@@ -1,5 +1,6 @@
 <h2 align="center">
-Portfolio Web Application
+Portfolio Web Application <br/>
+Chantelle Pasceri
 </h2>
 
 <div align="center">
@@ -9,9 +10,7 @@ Portfolio Web Application
 
 ## Built With
 
-My personal portfolio <a href="https://cpasceri.netlify.app/" target="_blank"></a> which features some of my github projects as well as my technical skills.<br/>
-
-This project was built using these technologies.
+My personal portfolio was built using these technologies:
 
 - React.js
 - SASS
@@ -21,6 +20,7 @@ This project was built using these technologies.
 
 ## Features
 
+** Features some of my github projects as well as my technical skills
 **📱 Fully Responsive**
 **🎨 Styled with Sass**
 
