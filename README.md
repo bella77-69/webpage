@@ -1,25 +1,38 @@
+<h2 align="center">
+
 # Portfolio Web Application
+</h2>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
+<img src="./webpage.jpg" alt="demo"/>
+</div>
 
-## Available Scripts
 
-In the project directory, you can run:
+## Built With
 
-### `npm start`
+My personal portfolio <a href="https://cpasceri.netlify.app/" target="_blank"></a> which features some of my github projects as well as my technical skills.<br/>
+
+This project was built using these technologies.
+
+- React.js
+- SASS
+- VsCode
+- React-Router
+- React-Icons
+
+## Features
+
+**📱 Fully Responsive**
+
+## 🛠 Installation and Setup Instructions
+
+1. Installation: `npm install`
+
+2. In the project directory, you can run: `npm start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-
-## Project Description 
-
-My Web Developer Portfolio
-
-
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The page will reload if you make edits.
 
 ### Deployment
 
