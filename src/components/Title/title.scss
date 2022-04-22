@@ -7,25 +7,25 @@
     font-size: 1rem;
     letter-spacing: .187rem;
     text-transform: capitalize;
-   // margin-bottom: 1rem;
     color: $font;
 
-    @include tablet {
-    font-size: 1.5rem;
-    }
+        @include tablet {
+        font-size: 1.5rem;
+        }
 
-    @include desktop {
-    font-size: 1.75rem;
-    }
+        @include desktop {
+        font-size: 1.75rem;
+        }
   }
+
   &-div {
     width: 8rem;
     height: 2px;
     margin: 0 auto;
     background: $btnlight;
 
-    @include tablet {
-    width: 12rem;
-    }
+        @include tablet {
+        width: 12rem;
+        }
   }
 }

@@ -9,37 +9,30 @@
     font-family: $fontfamily;
 
     &-shadow {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        background-color: $white;
-        z-index: 2;
-        box-shadow: 0 1px 1px 0 rgb(0, 0, 0, 6%), 0 2px 5px 0 rgb(0, 0, 0, 20%);
-        width: 90%;
-    
-            // @include tablet {
-            // width: 90%;
-            // }
-    
-            // @include desktop {
-            // width: 90%;
-            // }
-        }
-    &-container {
-        margin-top: 2rem;
-        display: flex;
-        flex-direction: column;
-        align-self: center;
-        align-items: center;
-        position: static;
-        font-family: $fontfamily;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: $white;
+    z-index: 2;
+    box-shadow: 0 1px 1px 0 rgb(0, 0, 0, 6%), 0 2px 5px 0 rgb(0, 0, 0, 20%);
+    width: 90%;
+    }
 
-            @include tablet {
-            width: 100%;
-            margin-top: 1.875rem;
-            justify-content: center;
+    &-container {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    position: static;
+    font-family: $fontfamily;
+
+        @include tablet {
+        width: 100%;
+        margin-top: 1.875rem;
+        justify-content: center;
         }
     }
 
@@ -60,7 +53,7 @@
 
     &-subNav {
     color: $shade;
-    top: 60px;
+    top: 3.75rem;
     font-size: .9375rem;
     height: fit-content;
     text-align: center;
@@ -75,14 +68,14 @@
         font-size: 1rem;
         position: -webkit-sticky;
         position: sticky;
-        width: 170px;
+        width: 10.625rem;
         height: fit-content;
         text-align: end;
         }
 
         @include desktop {
         font-size: 1.5625rem;
-        width: 315px;
+        width: 19.687rem;
         }
     }
 
@@ -94,7 +87,7 @@
         text-align: left;
         font-size: 1rem;
         margin: 20px 0px 5px 0px;
-        padding-bottom: 10px;
+        padding-bottom: .625rem;
         }
 
         @include desktop {
@@ -106,22 +99,21 @@
     &-content {
 
         @include mobile {
-        // padding: 15px;
         border-top: 2px solid $lightgrey;
         margin: 1rem;
         }
 
         @include tablet  {
-        padding-left: 15px;
-        margin-left: 5px;
+        padding-left: .9375rem;
+        margin-left: .312rem;
         border-left: 2px solid $lightgrey;
-        margin-bottom: 30px;
-        max-width: 550px;
+        margin-bottom: 1.875rem;
+        max-width: 34.375rem;
         }
 
         @include desktop {
-        padding-left: 20px;
-        max-width: 750px;
+        padding-left: 1.25rem;
+        max-width: 46.875rem;
         }
     }
 
@@ -140,7 +132,7 @@
     font-family: 'Abril Fatface', cursive;
     text-align: left;
     font-size: .9375rem;
-    margin-bottom: 15px;
+    margin-bottom: .937rem;
     color: $black;
 
         @include tablet {
@@ -153,29 +145,29 @@
     }
 
     &-desc {
+    text-align: left;
+    font-size: .875rem;
+    line-height: 1rem;
+    padding-bottom: 1rem;
+    color: $font;
+    padding-right: .5rem;
+    font-family: $fontfamily;
+    font-weight: 200;
+
+        @include tablet {
+        font-size: .937rem;
+        line-height: 1.125rem;
+        padding-right: 1rem;
+        }
+
+        @include desktop {
         text-align: left;
-        font-size: .875rem;
-        line-height: 16px;
-        padding-bottom: 1rem;
-        color: $font;
-        padding-right: .5rem;
-        font-family: $fontfamily;
+        font-size: 1.187rem;
         font-weight: 200;
-
-            @include tablet {
-            font-size: .9375rem;
-            line-height: 18px;
-            padding-right: 1rem;
-            }
-
-            @include desktop {
-            text-align: left;
-            font-size: 1.1875rem;
-            font-weight: 200;
-            line-height: 25px;
-            width: 100%;
-            padding-right: 0;
-            }
+        line-height: 25px;
+        width: 100%;
+        padding-right: 0;
+        }
     }
 
     &-option {    
@@ -196,55 +188,55 @@
     &-demo {
     display: flex;
     flex-direction: row;
-    margin-bottom: 10px;
+    margin-bottom: .625rem;
     align-items: center;
 
         @include mobile {
-        width: 90px;
+        width: 5.625rem;
         }
 
         @include tablet {
         display: flex;
         flex-direction: row;
-        margin-bottom: 10px;
-        width: 150px;
+        margin-bottom: .625rem;
+        width: 9.375rem;
         }
 
         @include desktop {
-        width: 250px;
+        width: 15.625rem;
         }
     }
 
     &-desktopDemo {
     object-fit: contain;
-    width: 142px;
-    margin-right: 25px;
+    width: 8.875rem;
+    margin-right: 1.562rem;
     box-shadow: .8px .9px 3px $border;
 
         @include tablet {
-        width: 310px;
+        width: 19.375rem;
         }
         
         @include desktop {
-        width: 500px;
+        width: 31.25rem;
         }
     }
 
     &-mobileDemo {
     object-fit: contain;
-    width: 53px;
+    width: 3.312rem;
     box-shadow: .8px .9px 3px $border;
 
         @include mobile {
-        width: 54px;
+        width: 3.375rem;
         }
 
         @include tablet {
-        width: 117px;  
+        width: 7.312rem;  
         }
 
         @include desktop {
-        width: 190px;
+        width: 11.875rem;
         }
     }
 
@@ -264,14 +256,14 @@
     }
 
     &-demofullimg {
-    width: 300px;
+    width: 18.75rem;
         
         @include tablet {
-        width: 400px;
+        width: 25rem;
         }
 
         @include desktop {
-        width: 500px;
+        width: 31.25rem;
         }
     }
 
@@ -294,21 +286,21 @@
     }
 
     &-notes {
-    margin-top: 0px;
-    padding-left: 25px;
-    padding-right: 20px;
+    margin-top: 0;
+    padding-left: 1.562rem;
+    padding-right: 1.25rem;
     text-align: left;
     font-size: .75rem;
     color: $grey;
 
         @include tablet {
-        padding-left: 20px;
+        padding-left: 1.25rem;
         font-size: .875rem;
         }
 
         @include desktop {
-        font-size: 1.0625rem;
-        margin-left: 1.0625rem;
+        font-size: 1.062rem;
+        margin-left: 1.062rem;
         padding-right: 0;
         }
     }
@@ -318,19 +310,19 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    margin-bottom: 15px;
-    margin-left: 10px;
-    width: 20px;
-    height: 30px;
+    margin-bottom: .937rem;
+    margin-left: .625rem;
+    width: 1.25rem;
+    height: 1.875rem;
     cursor: pointer;
     align-items: center;
     
         @include tablet {
-        width: 25px;
+        width: 1.562rem;
         }
             
         @include desktop {
-        width: 30px;
+        width: 1.875rem;
         }
 
         &:hover {

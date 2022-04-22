@@ -1,7 +1,6 @@
 @import "../../styles/mixins";
 
 .main{
-	// height: 100%;
 	display: flex;
     flex-direction: column;
 	align-items: center;
@@ -39,7 +38,6 @@
 		align-items: center;
 		justify-content: space-around;
 		background-color: $white;
-		margin-bottom: 3rem;
 		z-index: 2;
 		box-shadow: 0 1px 1px 0 rgb(0, 0, 0, 6%), 0 2px 5px 0 rgb(0, 0, 0, 20%);
 		
@@ -58,35 +56,33 @@
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
-	height: 21px;
-	width: 31px;
+	height: 1.312rem;
+	width: 1.937rem;
 	background-color: $font;
-	//box-shadow: 0 0 16px #000;
-	border-radius: 15px;
+	border-radius: .5rem;
 	transition: 0.4s;
 	animation-name: iden;
 	animation-duration: 1s;
 	animation-delay: 1s;
-    padding: 10px;
-    margin-right: 7px;
+    padding: .625rem;
+    margin-right: .437rem;
     
         @include tablet {
-        height: 80px;
-        width: 80px;
-        padding: 8px;
+        height: 5rem;
+        width: 5rem;
+        padding: .5rem;
         margin: 2rem;
         }
     
         @include desktop {
         background-size: auto;
-        height: 80px;
-	    width: 100px;
-        padding: 10px;
-        margin-right: 40px;
+        height: 5rem;
+	    width: 6.25rem;
+        padding: .625rem;
+        margin-right: 2.5rem;
         }
 }
 .box:hover{
-	// pointer: url();
 	transform: scale(1.1, 1.1);
 	box-shadow: 0 0 60px rgba(0,0,0,.8);
 }
@@ -115,7 +111,7 @@
 	animation-delay: 2.1s;
 }
 .box8{
-	background-image: url("../../assets/badge/logo-mysql.png");
+	background-image: url("../../assets/badge/mysql.png");
 	animation-delay: 2.2s;
 }
 .box9{
@@ -136,7 +132,7 @@
 }
 @keyframes iden{
 	0%{}
-	50%{	transform: scale(1.1, 1.1);
+	50%{transform: scale(1.1, 1.1);
 	box-shadow: 0 0 60px rgba(0,0,0,.8);}
 	100%{}
 }

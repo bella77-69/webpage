@@ -1,13 +1,14 @@
 @import "../../styles/mixins";
 
 .scroll {
-    // height: 2500px;
-    // overflow-y: scroll;
+
+    @include tablet {
+    margin-top: -5rem;
+    }
 
     &-position {
         width: 100%;
         left: 50%;
-        // bottom: 40px;
         height: 20px;
         font-size: 1rem;
         z-index: 1;
@@ -18,25 +19,23 @@
         filter: drop-shadow(0 0 .5px #fff) drop-shadow(0 0 8px #fff);
         transition-delay: 0.3s;
 
-        @include tablet {
-        font-size: 3rem;
-        bottom: 40px;
-        height: 20px;
-        }
+            @include tablet {
+            height: 20px;
+            }
 
-        @include desktop {
-        font-size: 5rem;   
-        height: 1.875rem;
-        }
+            @include desktop {
+            font-size: 5rem;   
+            height: 1.875rem;
+            }
 
-   &:hover {
-    -webkit-transform: scale(1.3);
-    transform: scale(1.3);
-    }
+            &:hover {
+            -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+            }
     }
 
     &-title {
-    font-size: .75rem;
+    font-size: .6875rem;
     font-family: $fontfamily;
     margin-top: 0;
 
@@ -45,7 +44,7 @@
     }
 
     @include desktop {
-    font-size: 1.125rem;
+    font-size: 1rem;
     }
     }
 }

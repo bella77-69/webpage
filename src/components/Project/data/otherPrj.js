@@ -1,4 +1,4 @@
-import shop from "../../../assets/projects/shop1.jpg";
+import shop from "../../../assets/projects/shop.jpg";
 import food from "../../../assets/projects/food.jpg";
 
 export const othprjData = [
@@ -27,12 +27,7 @@ export const othprjData = [
       name: "PREVIEW",
     },
     half: false,
-    features: [
-      "Recipies",
-      "Get information",
-      "Recipe Videos",
-      "Food Information",
-    ],
+    features: ["Recipies", "Get information", "Recipe Videos", "Food Information",],
     techs: ["React", "React-Router", "Sass", "API", "Materialize-css"],
   },
 ];

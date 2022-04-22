@@ -1,7 +1,6 @@
 @import "../../styles/mixins";
 
 .loader {
-    // width: 300px;
     height: 700px;
     display: flex;
     justify-content: center;
@@ -11,88 +10,3 @@
     background-repeat: no-repeat;
     background-position: center center;
 }
-  //   &-item {
-  //     width: 25px;
-  //     height: 25px;
-  //     border-radius: 50%;
-  //     background: $grey;
-  //     margin: 10px;
-  //     box-shadow: 0px 0px 10px 4px $black;
-  //     animation: bounce 4s cubic-bezier(0.600, -0.280, 0.790, 1.630) infinite;
-      
-  //     &:nth-child(1) {
-  //       animation-delay: -.7s;
-  //       background-color: $black;
-  //     }
-  //     &:nth-child(2) {
-  //       animation-delay: -1s;
-  //       background-color: $btndark;
-  //     }
-  //     &:nth-child(3) {
-  //       animation: none;
-  //       background-color: $shade;
-  //     }
-  //     &:nth-child(4) {
-  //       animation-delay: -1s;
-  //       background-color: $font;
-  //     }
-  //     &:nth-child(5) {
-  //       animation-delay: -.7s;
-  //       background-color: $light;
-  //     }
-  //   }
-  // }
-  
-  // @keyframes bounce {
-  //   5% {
-  //     transform: translateY(40px);
-  //   }
-  //   10% {
-  //     transform: translateY(-40px);
-  //   }
-  //   15% {
-  //     transform: translateY(30px);
-  //   }
-  //   20% {
-  //     transform: translateY(-30px);
-  //   }
-  //   25% {
-  //     transform: translateY(20px);
-  //   }
-  //   30% {
-  //     transform: translateY(-20px);
-  //   }
-  //   35% {
-  //     transform: translateY(15px);
-  //   }
-  //   40% {
-  //     transform: translateY(-15px);
-  //   }
-  //   45% {
-  //     transform: translateY(10px);
-  //   }
-  //   50% {
-  //     transform: translateY(-10px);
-  //   }
-  //   55% {
-  //     transform: translateY(8px);
-  //   }
-  //   60% {
-  //     transform: translateY(-8px);
-  //   }
-  //   65% {
-  //     transform: translateY(6px);
-  //   }
-  //   70% {
-  //     transform: translateY(-6px);
-  //   }
-  //   80% {
-  //     transform: translateY(4px);
-  //   }
-  //   90% {
-  //     transform: translateY(-4px);
-  //   }
-  //   100% {
-  //     transform: translateY(0);
-  //   }
-  // }

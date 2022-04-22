@@ -1,7 +1,7 @@
 import React from "react";
 import Title from "../../components/Title/Title";
-import { wbprjData } from "../../components/Project/data/webDev";
-import { mbprjData } from "../../components/Project/data/mobileDev";
+import { prjData } from "../../components/Project/data/webDev";
+import { brainStnData } from "../../components/Project/data/brainStn";
 import { othprjData } from "../../components/Project/data/otherPrj";
 import "./project.scss";
 
@@ -14,31 +14,30 @@ const Project = () => {
           <div className="project-divder" id="webprj">
             <div className="project-subNav">Web Development Projects</div>
             <div className="project-subtitle">
-              {wbprjData.map((website) => (
+              {prjData.map((website) => (
                 <div className="project-content">
                   <div className="project-info">
                     <div className="project-name">{website.name}</div>
-                    <a className="project-website" href={website.github}> </a>
+                    <a className="project-website" href={website.github}>
+                      {" "}
+                    </a>
                   </div>
                   <div className="project-desc">{website.desc}</div>
-                 
-                    <div className="project-option">WEBSITE PREVIEW</div>
-                
+
+                  <div className="project-option">WEBSITE PREVIEW</div>
+
                   <div className="project-demo">
-                    
-                      <img
-                        className="project-demo project-desktopDemo project-movie-demo"
-                        src={website.desktopGif}
-                        alt="project-preview"
-                      />
-                   
-                  
-                      <img
-                        className="project-demo project-mobileDemo project-movie-demo"
-                        src={website.mobileGif}
-                        alt="project-preview"
-                      />
-               
+                    <img
+                      className="project-demo project-desktopDemo project-movie-demo"
+                      src={website.desktopGif}
+                      alt="project-preview"
+                    />
+
+                    <img
+                      className="project-demo project-mobileDemo project-movie-demo"
+                      src={website.mobileGif}
+                      alt="project-preview"
+                    />
                   </div>
                   <div className="project-subpoints">
                     <div className="project-column">
@@ -64,44 +63,44 @@ const Project = () => {
           </div>
           <div className="project-divder">
             <div className="project-subNav"> Brainstation Projects</div>
-            <div className="project-subtitle" >
-              {mbprjData.map((app) => (
+            <div className="project-subtitle">
+              {brainStnData.map((app) => (
                 <div className="project-content">
                   <div className="project-info">
                     <div className="project-name">{app.name}</div>
-                    <a className="project-website" href={app.github}> </a>
+                    <a className="project-website" href={app.github}>
+                      {" "}
+                    </a>
                   </div>
                   <div className="project-desc">{app.desc}</div>
                   <div className="project-subpoints">
                     <div className="project-column">
                       <div className="project-subtitle">PREVIEW</div>
                       <div className="project-demo">
-                      
-                          <img
-                            className="project-demo mobileDemo"
-                            src={app.mobileGif}
-                            alt="app-preview-img"
-                          />
-                    
+                        <img
+                          className="project-demo mobileDemo"
+                          src={app.mobileGif}
+                          alt="app-preview-img"
+                        />
                       </div>
                     </div>
                     <div className="project-subpoints">
-                    <div className="project-column">
-                      <div className="project-subtitle">FEATURES</div>
-                      <ul className="project-notes">
-                        {app.features.map((feature) => (
-                          <li className="project-list">{feature}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div className="project-column">
-                      <div className="project-subtitle">TECHNOLOGIES</div>
-                      <ul className="project-notes">
-                        {app.techs.map((module) => (
-                          <li className="project-list">{module}</li>
-                        ))}
-                      </ul>
-                    </div>
+                      <div className="project-column">
+                        <div className="project-subtitle">FEATURES</div>
+                        <ul className="project-notes">
+                          {app.features.map((feature) => (
+                            <li className="project-list">{feature}</li>
+                          ))}
+                        </ul>
+                      </div>
+                      <div className="project-column">
+                        <div className="project-subtitle">TECHNOLOGIES</div>
+                        <ul className="project-notes">
+                          {app.techs.map((module) => (
+                            <li className="project-list">{module}</li>
+                          ))}
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -109,15 +108,15 @@ const Project = () => {
             </div>
           </div>
           <div className="project-divder">
-            <div className="project-subNav" >
-              Other Projects
-            </div>
-            <div  className="project-subtitle" >
+            <div className="project-subNav">Other Projects</div>
+            <div className="project-subtitle">
               {othprjData.map((prj) => (
                 <div className="project-content">
                   <div className="project-info">
                     <div className="project-name">{prj.name}</div>
-                    <a className="project-website" href={prj.github}> </a>
+                    <a className="project-website" href={prj.github}>
+                      {" "}
+                    </a>
                   </div>
                   {prj.tags && (
                     <div

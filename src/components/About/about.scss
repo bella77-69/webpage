@@ -11,16 +11,9 @@
     align-items: center;
     
     &-wrapper {
-        // display: flex;
-        // flex-wrap: wrap;
-    // display:grid;
-    // gap: 2rem;
-    // justify-items: center;
     position: relative;
-    // width: 100%;
-    // min-height: 1px;
-    padding-right: 40px;
-    padding-left: 40px;
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
     width: 90%;
     }
 
@@ -31,18 +24,15 @@
     align-items: center;
     justify-content: space-around;
     background-color: #fff;
-    // margin-bottom: 3rem;
     z-index: 2;
     box-shadow: 0 1px 1px 0 rgb(0, 0, 0, 6%), 0 2px 5px 0 rgb(0, 0, 0, 20%);
     
-
         @include tablet {
         padding: 4.25rem;
         }
 
         @include desktop {
         flex-direction: row;
-       
         }
     }
 
@@ -60,7 +50,7 @@
         @include desktop {
         border-radius: .5rem;
         width: 20%;
-        padding: 15px;
+        padding: .937rem;
         margin: 1rem;
         }
     }
@@ -68,7 +58,6 @@
     &-title {
     text-align: center;
    
-       
         @include desktop {
         margin-top: 4rem;
         }
@@ -76,12 +65,13 @@
 
     &-container {
     width: 100%;
+
         @include tablet {
         width: 100%;
         }
 
         @include desktop {
-        padding: 20px;
+        padding: 1.25rem;
         }
     }
 
@@ -103,7 +93,6 @@
         margin: 0 auto;
         margin-top: .5rem;
         font-size: 1.1875rem;
-        // margin-left: 1rem;
         }
       }
 }

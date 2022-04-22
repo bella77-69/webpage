@@ -1,12 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import { FaAngleUp } from 'react-icons/fa';
-import './scroll.scss';
-
+import React, { useState, useEffect } from "react";
+import { FaAngleUp } from "react-icons/fa";
+import "./scroll.scss";
 
 const Scroll = () => {
   const [showTopBtn, setShowTopBtn] = useState(false);
   useEffect(() => {
-    window.addEventListener('scroll', () => {
+    window.addEventListener("scroll", () => {
       if (window.scrollY > 400) {
         setShowTopBtn(true);
       } else {
@@ -17,7 +16,7 @@ const Scroll = () => {
   const goToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
   };
 
@@ -26,8 +25,7 @@ const Scroll = () => {
       {showTopBtn && (
         <FaAngleUp className="scroll-position scroll-style" onClick={goToTop} />
       )}
-      <h1 className='scroll-title'>Top</h1>
- 
+      <h1 className="scroll-title">Top</h1>
     </div>
   );
 };

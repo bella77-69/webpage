@@ -1,8 +1,8 @@
-import wine from "../../../assets/projects/wine3.jpg";
+import wine from "../../../assets/projects/wine.jpg";
 import band from "../../../assets/projects/band.jpg";
 import brain from "../../../assets/projects/brain.jpg";
 
-export const mbprjData = [
+export const brainStnData = [
   {
     id: 1,
     name: "Che Vino",

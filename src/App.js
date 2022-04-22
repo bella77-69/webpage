@@ -5,36 +5,34 @@ import Home from "./pages/Home/Home";
 import About from "./components/About/About";
 import Project from "./pages/Projects/Project";
 import Skill from "./pages/Skills/Skill";
-import Contact from "./pages/Contact/Contact";
 import Nav from "./components/Nav/Nav";
 import Footer from "./components/Footer/Footer";
 import Preloader from "./components/Loader/Loading";
 
-
 function App() {
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 1500)
-  }, [])
+    setTimeout(() => setLoading(false), 1500);
+  }, []);
 
   return (
-      <Router>
-     {loading === false ? (
-         <div className="App">
-        <Nav />
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/about" exact component={About} />
-          <Route path="/projects" exact component={Project} />
-          <Route path="/skills" exact component={Skill} />
-          <Route path="/contact" exact component={Contact} />
-        </Switch>
-        <Footer />
-        </div> ) : (
-          <Preloader />
-        )}
-      </Router>
+    <Router>
+      {loading === false ? (
+        <div className="App">
+          <Nav />
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/about" exact component={About} />
+            <Route path="/projects" exact component={Project} />
+            <Route path="/skills" exact component={Skill} />
+          </Switch>
+          <Footer />
+        </div>
+      ) : (
+        <Preloader />
+      )}
+    </Router>
   );
 }
 
