@@ -2,7 +2,6 @@ import React from "react";
 import "./footer.scss";
 import { FaLinkedinIn, FaGithub, FaTwitter } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import Scroll from "../Scroll/Scroll";
 export default function footer() {
   return (
     <footer className="footer">
@@ -13,9 +12,6 @@ export default function footer() {
           Designed and Developed by Chantelle
       
         </p>
-        {/* <div className="footer-wrapper">
-        <Scroll />
-        </div> */}
         <div className="footer-wrapper">
           <div className="footer-wrapper--social">
         
@@ -35,10 +31,6 @@ export default function footer() {
               <FaTwitter />
             </a>
           </div>
-          {/* <div className="footer-wrapper">
-          <Scroll />
-          </div> */}
-         
         </div>
       </div>
     </footer>
