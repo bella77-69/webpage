@@ -7,7 +7,6 @@ Chantelle Pasceri
 <img src="./webpage.jpg" alt="demo"/>
 </div>
 
-
 ## Built With
 
 My personal portfolio was built using these technologies:
