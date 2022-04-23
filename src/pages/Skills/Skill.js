@@ -29,7 +29,9 @@ function Main() {
           <div className="box12 box"></div>
         </div>
       </div>
-      <Scroll />
+      <div className="main-scroll">
+        <Scroll />
+      </div>
     </div>
   );
 }

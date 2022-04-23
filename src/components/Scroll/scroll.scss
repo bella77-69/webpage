@@ -1,10 +1,7 @@
 @import "../../styles/mixins";
 
 .scroll {
-
-    @include tablet {
-    margin-top: -5rem;
-    }
+    padding-top: 1.5rem;
 
     &-position {
         width: 100%;
@@ -40,12 +37,12 @@
     font-family: $fontfamily;
     margin-top: 0;
 
-    @include tablet {
-    font-size: .875rem;
-    }
+        @include tablet {
+        font-size: .875rem;
+        }
 
-    @include desktop {
-    font-size: 1rem;
-    }
+        @include desktop {
+        font-size: 1rem;
+        }
     }
 }
