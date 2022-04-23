@@ -129,7 +129,6 @@
     }
 
     &-name {
-    font-family: 'Abril Fatface', cursive;
     text-align: left;
     font-size: .9375rem;
     margin-bottom: .937rem;
@@ -190,7 +189,12 @@
     flex-direction: row;
     margin-bottom: .625rem;
     align-items: center;
+    transition:transform 0.25s ease;
 
+    &:hover {
+        transform:scale(1.5);
+        margin-left: 1.75rem;
+    }
         @include mobile {
         width: 5.625rem;
         }

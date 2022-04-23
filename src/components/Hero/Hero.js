@@ -3,7 +3,7 @@ import "./hero.scss";
 
 function Hero() {
   return (
-    <div id="home" className="hero hero-image">
+    <div className="hero hero-image">
       <div className="hero-overlay"></div>
       <div className="hero-content hero-table">
         <div className="hero-cell">

@@ -76,7 +76,7 @@ const Project = () => {
                   <div className="project-subpoints">
                     <div className="project-column">
                       <div className="project-subtitle">PREVIEW</div>
-                      <div className="project-demo">
+                      <div className="project-demo" >
                         <img
                           className="project-demo mobileDemo"
                           src={app.mobileGif}

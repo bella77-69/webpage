@@ -9,8 +9,11 @@
     width: 100%;
     background-color: $light;
 
+		// @include ipad {
+		// height: 65vh;
+		// }
         @include tablet {
-        height: 114vh;
+        height: auto;
         }
 
         @include desktop {
@@ -27,6 +30,7 @@
     @include tablet {
     flex-wrap: wrap;
     }
+
     }
 
 	&-shadow {

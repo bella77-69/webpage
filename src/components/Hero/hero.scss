@@ -4,7 +4,7 @@
     margin: 0 auto;
     width: 100%;
     font-family: $fontfamily;
-    height: 100vh;
+    height: 25vh;
     position: relative;
     color: #fff;
 
@@ -68,7 +68,7 @@
       animation-fill-mode:forwards;
       animation-timing-function:ease;
       font-weight: 600;
-      font-size: .75rem;
+      font-size: .6875rem;
       
         @keyframes wel {
         0% {
@@ -95,7 +95,7 @@
     }
 
     &-subtitle {
-      font-size: .625rem;
+      font-size: .5rem;
       font-weight: 300;
       animation: slideRight 1.5s backwards;
       animation-delay: 1.5s;
@@ -124,7 +124,7 @@
 
     &-smaller {
       overflow: hidden;
-      letter-spacing: .187rem;
+      letter-spacing: .0625rem;
       font-weight: 300;
       display: inline-block;
       animation: slideRightBottom 1.5s backwards;
@@ -158,6 +158,3 @@
           }
       }
 }
-
-
-
