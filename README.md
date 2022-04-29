@@ -36,6 +36,6 @@ The page will reload if you make edits.
 
 ### Deployment
 
-[https://cpasceri.netlify.app/](https://cpasceri.netlify.app/ “My Portfolio Website”)
+[https://cpasceri.netlify.app/] “My Portfolio Website”
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/fff17987-09de-4070-bbf9-b70ca0ca931c/deploy-status)](https://app.netlify.com/sites/cpasceri/deploys)
