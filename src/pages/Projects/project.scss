@@ -191,10 +191,10 @@
     align-items: center;
     transition:transform 0.25s ease;
 
-    &:hover {
-        transform:scale(1.5);
-        margin-left: 1.75rem;
-    }
+    // &:hover {
+    //     transform:scale(1.5);
+    //     margin-left: 1.75rem;
+    // }
         @include mobile {
         width: 5.625rem;
         }
